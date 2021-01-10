@@ -1,0 +1,50 @@
+.nice-dates-day.-today {
+    color: orange;
+}
+
+@media (hover: none) {
+    .nice-dates-day:after {
+        content: none;
+    }
+    .nice-dates-day.-taskDay * {
+        color: #fff;
+    }
+}
+.nice-dates-day.-taskDay:before {
+    opacity: 1;
+}
+.nice-dates-day.-taskDay:hover:after {
+    background-color: #fff;
+}
+.nice-dates-day.-taskDay:not(:hover) *,
+.nice-dates-day.-taskDay.-disabled * {
+    color: #fff;
+}
+.nice-dates-day.-taskDay.-taskDay-start:before {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    right: 0;
+}
+.nice-dates-day.-taskDay.-taskDay-end:before {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    left: 0;
+}
+.nice-dates-day.-taskDay.-taskDay-middle:before {
+    border-radius: 0;
+    left: 0;
+    right: 0;
+}
+.nice-dates-day.-taskDay.-taskDay-middle:nth-child(7n + 1):before {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.nice-dates-day.-taskDay.-taskDay-middle:not(.-end):nth-child(7n):before {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.nice-dates-day.-taskDay:before {
+    background-color: orange;
+    z-index: 1;
+}
