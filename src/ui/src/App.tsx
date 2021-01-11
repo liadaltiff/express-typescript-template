@@ -24,7 +24,11 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: 'baseline',
 	},
 }));
-const newSocket = io(`http://${process.env.REACT_APP_HOST}`, {
+// const newSocket = io(`http://${process.env.REACT_APP_HOST}`, {
+// 	transports: ['websocket'],
+// 	upgrade: false,
+// });
+const newSocket = io(``, {
 	transports: ['websocket'],
 	upgrade: false,
 });

@@ -12,6 +12,7 @@ import {
     getAllTasksThatAskedForExchange,
     makeTaskExchange,
 } from './api/socket.functions/socket.functions';
+const path = require("path");
 
 const app = Express();
 
@@ -22,9 +23,19 @@ app.use(Express.json());
 app.use(Express.urlencoded({ extended: true }));
 app.use(compression());
 
+// app.use("/", Express.static(__dirname + '/ui/build'));
+const root = path.join(__dirname, "ui", "build");
+app.use(Express.static(root));
+
 app.use('/api', appRouter);
 
 const { PORT, HOST } = process.env;
+
+
+app.get("*", (req, res) => {
+    
+    res.sendFile("index.html", { root });
+  });
 
 if (PORT && HOST) {
     const server = app.listen(+PORT, HOST, () => {

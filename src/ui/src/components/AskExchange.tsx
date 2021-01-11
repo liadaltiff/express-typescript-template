@@ -33,9 +33,7 @@ const AskExchange: React.FC<AskExchangeProps> = ({
 		}).then((result) => {
 			/* Read more about isConfirmed, isDenied below */
 			if (result.isConfirmed) {
-				Axios.put(
-					`http://${process.env.REACT_APP_HOST}/api/tasks/askForExchange/${task._id}`
-				)
+				Axios.put(`/api/tasks/askForExchange/${task._id}`)
 					.then((res) => {
 						if (res.status === 200) {
 							Swal.fire('בקשה נשלחה בהצלחה!', '', 'success');

@@ -53,7 +53,7 @@ const SignIn: React.FC<SignInProps> = ({
 
 	const handleLogin = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
-		Axios.post(`http://${process.env.REACT_APP_HOST}/api/users/login`, {
+		Axios.post(`/api/users/login`, {
 			email: email,
 			password: password,
 		})

@@ -36,7 +36,7 @@ const AddTask: React.FC<AddTaskProps> = ({
 	const [newTask, setNewTask] = useState<Task>(newTaskDefault);
 
 	const addTask = () => {
-		Axios.post(`http://${process.env.REACT_APP_HOST}/api/tasks`, {
+		Axios.post(`/api/tasks`, {
 			task: newTask,
 		})
 			.then((res) => {
