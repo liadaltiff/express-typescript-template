@@ -40,13 +40,17 @@ export const updateRoles = async (
       map.set(user._id, user);
     }
 
-    clientUsers.forEach(async (user) => {
-      await User.findOneAndUpdate(
-        { _id: user._id },
-        { role: user.role },
-        { upsert: true, useFindAndModify: false }
-      ).exec();
+    const updateActions = clientUsers.map((user: IUser) => {
+      return {
+        updateOne: {
+          filter: { _id: user._id },
+          update: { role: user.role },
+          options: { upsert: false, useFindAndModify: false },
+        },
+      };
     });
+
+    User.bulkWrite(updateActions);
 
     const newDBUsers = await User.find();
 
