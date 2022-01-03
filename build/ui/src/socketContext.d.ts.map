@@ -1,0 +1,1 @@
+{"version":3,"file":"socketContext.d.ts","sourceRoot":"","sources":["../../../src/ui/src/socketContext.tsx"],"names":[],"mappings":";AACA,OAAO,EAAM,MAAM,EAAE,MAAM,kBAAkB,CAAC;AAE9C,oBAAY,iBAAiB,GAAG;IAC5B,MAAM,EAAE,MAAM,CAAC;IACf,SAAS,EAAE,CAAC,MAAM,EAAE,MAAM,KAAK,IAAI,CAAC;CACvC,CAAC;AASF,QAAA,MAAM,aAAa,4CAElB,CAAC;AAEF,eAAe,aAAa,CAAC"}

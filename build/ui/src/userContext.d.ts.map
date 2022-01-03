@@ -1,0 +1,1 @@
+{"version":3,"file":"userContext.d.ts","sourceRoot":"","sources":["../../../src/ui/src/userContext.tsx"],"names":[],"mappings":";AACA,OAAO,IAAI,MAAM,4BAA4B,CAAC;AAC9C,oBAAY,eAAe,GAAG;IAC1B,IAAI,EAAE,IAAI,GAAG,IAAI,CAAC;IAClB,OAAO,EAAE,CAAC,IAAI,EAAE,IAAI,KAAK,IAAI,CAAC;CACjC,CAAC;AASF,QAAA,MAAM,WAAW,0CAA0D,CAAC;AAE5E,eAAe,WAAW,CAAC"}

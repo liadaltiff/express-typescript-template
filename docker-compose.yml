@@ -1,0 +1,30 @@
+version: '3.9'
+services:
+    web:
+        image: shibutzit-image
+        ports:
+            - '8081:8081'
+        environment:
+            - DB=mongodb://mongo:27017/schedualerS
+        links:
+            - mongo
+        depends_on:
+            - mongo
+        networks:
+            - app-network
+    mongo:
+        image: mongo
+        volumes:
+            - data-volume:/data/db
+        ports:
+            - '27017:27017'
+        networks:
+            - app-network
+networks:
+    app-network:
+        driver: bridge
+volumes:
+    data-volume:
+    node_modules:
+    web-root:
+        driver: local

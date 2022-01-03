@@ -1,0 +1,1 @@
+{"version":3,"file":"DisplayedPersonContext.js","sourceRoot":"","sources":["../../../src/ui/src/DisplayedPersonContext.tsx"],"names":[],"mappings":";;AAAA,iCAAsC;AAQtC,MAAM,kCAAkC,GAAwB;IAC5D,eAAe,EAAE,IAAI;IACrB,kBAAkB,CAAC,eAAe;QAC9B,IAAI,CAAC,eAAe,GAAG,eAAe,CAAC;IAC3C,CAAC;CACJ,CAAC;AAEF,MAAM,sBAAsB,GAAG,qBAAa,CACxC,kCAAkC,CACrC,CAAC;AAEF,kBAAe,sBAAsB,CAAC"}

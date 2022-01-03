@@ -1,0 +1,1 @@
+{"version":3,"file":"socketContext.js","sourceRoot":"","sources":["../../../src/ui/src/socketContext.tsx"],"names":[],"mappings":";;AAAA,iCAAsC;AACtC,uDAA8C;AAO9C,MAAM,yBAAyB,GAAsB;IACjD,MAAM,EAAE,qBAAE,CAAC,EAAE,CAAC;IACd,SAAS,CAAC,MAAM;QACZ,IAAI,CAAC,MAAM,GAAG,MAAM,CAAC;IACzB,CAAC;CACJ,CAAC;AAEF,MAAM,aAAa,GAAG,qBAAa,CAC/B,yBAAyB,CAC5B,CAAC;AAEF,kBAAe,aAAa,CAAC"}
