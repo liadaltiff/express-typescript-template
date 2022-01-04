@@ -151,7 +151,7 @@ export const login = async (
 
   try {
     const LoggedUser = await User.findOne({
-      email: email,
+      email,
     });
 
     if (LoggedUser) {
@@ -161,12 +161,12 @@ export const login = async (
           status: LoggedUser ? 200 : 404,
           user: LoggedUser,
         };
-        return await res.status(reply.status).json(reply);
-      } else {
-        res.status(401).send("Username Or Password Are Incorrect");
+        return res.status(reply.status).json(reply);
       }
     }
+
+    res.status(401).send("Username Or Password Are Incorrect");
   } catch (error: any) {
-    return await res.status(500).json({ status: 500, error: error.message });
+    return res.status(500).json({ status: 500, error: error.message });
   }
 };
